@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="fotter" customModule="tcsAppJosePablo" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3Gv-CD-Lpm">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPT-De-tZl">
+                    <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logingBg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1ew-Nb-5cO">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tataLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BwY-qS-CLs">
+                            <rect key="frame" x="187" y="52" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="8Xw-ci-GWS"/>
+                                <constraint firstAttribute="width" constant="40" id="unf-Ds-pTw"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test for TCS  José Pablo Pérez Estrada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVh-1q-r0k">
+                            <rect key="frame" x="16" y="16" width="382" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="1ew-Nb-5cO" firstAttribute="top" secondItem="iPT-De-tZl" secondAttribute="top" id="23O-kF-Fny"/>
+                        <constraint firstItem="pVh-1q-r0k" firstAttribute="leading" secondItem="iPT-De-tZl" secondAttribute="leading" constant="16" id="9U5-LO-nle"/>
+                        <constraint firstAttribute="bottom" secondItem="1ew-Nb-5cO" secondAttribute="bottom" id="DdZ-Oa-ejb"/>
+                        <constraint firstItem="1ew-Nb-5cO" firstAttribute="leading" secondItem="iPT-De-tZl" secondAttribute="leading" id="J0c-Xh-yZa"/>
+                        <constraint firstItem="pVh-1q-r0k" firstAttribute="top" secondItem="iPT-De-tZl" secondAttribute="top" constant="16" id="PZP-sq-YvH"/>
+                        <constraint firstAttribute="bottom" secondItem="BwY-qS-CLs" secondAttribute="bottom" constant="8" id="XKK-kQ-ecz"/>
+                        <constraint firstItem="BwY-qS-CLs" firstAttribute="centerX" secondItem="1ew-Nb-5cO" secondAttribute="centerX" id="Zfv-73-Puf"/>
+                        <constraint firstAttribute="trailing" secondItem="1ew-Nb-5cO" secondAttribute="trailing" id="gUc-mN-itw"/>
+                        <constraint firstAttribute="trailing" secondItem="pVh-1q-r0k" secondAttribute="trailing" constant="16" id="jBL-HH-idl"/>
+                        <constraint firstAttribute="height" constant="100" id="rWn-de-NTq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="4VR-hK-URE"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="iPT-De-tZl" firstAttribute="top" secondItem="4VR-hK-URE" secondAttribute="top" id="Q9b-BS-4cD"/>
+                <constraint firstItem="iPT-De-tZl" firstAttribute="leading" secondItem="4VR-hK-URE" secondAttribute="leading" id="ZBo-Ee-4nd"/>
+                <constraint firstItem="iPT-De-tZl" firstAttribute="trailing" secondItem="4VR-hK-URE" secondAttribute="trailing" id="rDf-bk-Smo"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logingBg.jpg" width="3000" height="2000"/>
+        <image name="tataLogo" width="1626" height="760"/>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transaction View Controller-->
+        <scene sceneID="D6J-wP-BZl">
+            <objects>
+                <viewController restorationIdentifier="transactionID" storyboardIdentifier="transactionID" modalPresentationStyle="fullScreen" id="nFF-Qp-snL" customClass="TransactionViewController" customModule="tcsAppJosePablo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X9S-2g-aV6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="toL-iv-b9Y">
+                                <rect key="frame" x="0.0" y="180" width="414" height="572"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nFF-Qp-snL" id="fVL-Pb-Wj0"/>
+                                    <outlet property="delegate" destination="nFF-Qp-snL" id="Esi-Nd-YWk"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CeQ-ZG-dta" customClass="HeaderView" customModule="tcsAppJosePablo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="164"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="kYA-H1-Wy9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qS-l5-JU7" customClass="fotter" customModule="tcsAppJosePablo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="768" width="414" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="k5P-XC-GqI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UlF-AN-QuP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2qS-l5-JU7" secondAttribute="bottom" id="EPp-bf-ZZW"/>
+                            <constraint firstItem="toL-iv-b9Y" firstAttribute="top" secondItem="CeQ-ZG-dta" secondAttribute="bottom" constant="16" id="GMb-hW-duZ"/>
+                            <constraint firstItem="CeQ-ZG-dta" firstAttribute="top" secondItem="X9S-2g-aV6" secondAttribute="top" id="IMF-oZ-aay"/>
+                            <constraint firstItem="UlF-AN-QuP" firstAttribute="trailing" secondItem="CeQ-ZG-dta" secondAttribute="trailing" id="Jga-5J-a34"/>
+                            <constraint firstItem="UlF-AN-QuP" firstAttribute="trailing" secondItem="2qS-l5-JU7" secondAttribute="trailing" id="LsO-Rf-hlp"/>
+                            <constraint firstItem="toL-iv-b9Y" firstAttribute="leading" secondItem="UlF-AN-QuP" secondAttribute="leading" id="Wb7-ca-FzM"/>
+                            <constraint firstItem="toL-iv-b9Y" firstAttribute="trailing" secondItem="UlF-AN-QuP" secondAttribute="trailing" id="alT-eW-bM5"/>
+                            <constraint firstItem="CeQ-ZG-dta" firstAttribute="leading" secondItem="UlF-AN-QuP" secondAttribute="leading" id="d08-Ce-1np"/>
+                            <constraint firstItem="2qS-l5-JU7" firstAttribute="top" secondItem="toL-iv-b9Y" secondAttribute="bottom" constant="16" id="qeD-bp-42M"/>
+                            <constraint firstItem="2qS-l5-JU7" firstAttribute="leading" secondItem="UlF-AN-QuP" secondAttribute="leading" id="tB0-wN-PLQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="transactionTableview" destination="toL-iv-b9Y" id="uBq-sf-mlY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z8i-cn-g7m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-21.739130434782609" y="-32.142857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
