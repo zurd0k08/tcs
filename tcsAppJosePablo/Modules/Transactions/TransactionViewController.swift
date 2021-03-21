@@ -26,9 +26,9 @@ class TransactionViewController: UIViewController {
     }
     
     func configure(){
-        WebService().getTransactions(url: urlAPI, ViewController: self.view){ transactions in
+        WebService().getTransactions(url: urlAPI){ transactions in
             if let transactions = transactions as? [Transaction]{
-                self.transactions = transactions  as! [Transaction]
+                self.transactions = transactions
                 DispatchQueue.main.async {
                     self.transactionTableview.reloadData()
                 }

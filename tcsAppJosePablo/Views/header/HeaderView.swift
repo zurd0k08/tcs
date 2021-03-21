@@ -43,7 +43,6 @@ class HeaderView: UIView, CLLocationManagerDelegate {
        func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             coordinates.text = "Coordinates : Latitude \(location.coordinate.latitude) - Longitude \(location.coordinate.longitude)"
-            
            }
            
        }

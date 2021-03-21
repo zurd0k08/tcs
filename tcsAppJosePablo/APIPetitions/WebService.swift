@@ -9,7 +9,7 @@ import Foundation
 import  UIKit
 
 class WebService{
-    func getTransactions (url : URL, ViewController : UIView, completion: @escaping (Any?) ->()){
+    func getTransactions (url : URL, completion: @escaping (Any?) ->()){
         URLSession.shared.dataTask(with : url){ data, response, error in
             if let httpResponse = response as? HTTPURLResponse {
                 print("error \(httpResponse.statusCode)")

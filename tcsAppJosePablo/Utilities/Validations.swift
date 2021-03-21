@@ -8,11 +8,7 @@
 import Foundation
 import UIKit
 
-
-
 class Validations {
-
-
 
 public func validateEmail(email: String, label : UILabel, error : String, input : UITextField) -> Bool {
     let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -21,7 +17,6 @@ public func validateEmail(email: String, label : UILabel, error : String, input 
     let isValidateEmail = validateEmail.evaluate(with: trimmedString)
     
     if isValidateEmail {
-       
         label.text = ""
         input.layer.borderColor = UIColor.green.cgColor
         input.layer.borderWidth = 1.0
@@ -45,7 +40,6 @@ public func validateEmail(email: String, label : UILabel, error : String, input 
         let validatePassword = NSPredicate(format:"SELF MATCHES %@", passRegEx)
         let isValidatePass = validatePassword.evaluate(with: trimmedString)
         if isValidatePass {
-           
             label.text = ""
             input.layer.borderColor = UIColor.green.cgColor
             input.layer.borderWidth = 1.0
@@ -54,7 +48,6 @@ public func validateEmail(email: String, label : UILabel, error : String, input 
             label.text = error
             input.layer.borderColor = UIColor.red.cgColor
             input.layer.borderWidth = 1.0
-            
             if input.text!.isEmpty{
                 label.text = "Campo vacio"
             }
